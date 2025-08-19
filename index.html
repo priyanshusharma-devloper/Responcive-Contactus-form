@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+form {
+    max-width: 450px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4facfe;
+    box-shadow: 0px 0px 5px rgba(79, 172, 254, 0.6);
+    outline: none;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+}
+</style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e0215abf-009e-4654-8a5a-decf5e9b5cf3">
+
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="Age">Age</label>
+            <input id="Age" name="Age" type="number" placeholder="Enter your age" required>
+        </div>
+        <div>
+            <label for="Phoneno">Phone</label>
+            <input id="Phoneno" name="Phone" type="tel" placeholder="Enter your phone number" required>
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input id="Email" name="Email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="Add">Address</label>
+            <textarea id="Add" name="Address" placeholder="Enter your address"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
