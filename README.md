@@ -20,4 +20,4 @@ HTML – Structure
 
 CSS  – Styling & Responsive Layout
 
-JavaScript – Interactivity
+
